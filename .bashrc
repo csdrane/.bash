@@ -2,6 +2,7 @@ export EDITOR=vim
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 export PGDATA=/usr/local/var/postgres
+export FLOWID=kEXjymKxSXsKN67q6d6gI4x9ZNGiMNJC
 
 source ~/.git-completion.bash
 
@@ -21,13 +22,17 @@ PS1='\W$(__git_ps1 " [%s]") $ '
 # hackerschool [announcements $%] $ 
 
 alias cdp='cd ~/Programming/python'
-alias ip='ipython -i'
-alias ip3='ipython3 -i'
+alias cdws='cd ~/dev/clojure-websockets'
+alias cdai='cd ~/dev/clojure-api-importer'
 alias ga='git add *'
 alias gc='git commit -m'
 alias gs='git status'
+alias ip='ipython -i'
+alias ip3='ipython3 -i'
 alias ls='ls -lG'
+alias vbrc='vim ~/.bashrc'
 LSCOLORS='gxfxcxdxbxegedabagacad'
 export LSCOLORS
 
 mi () { mediainfo "$@" | grep 'name \|bit rate \|Encoding settings'; }
+
